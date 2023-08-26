@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL CHAUDANDI DARBAR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "WhatsApp Image2.jpg" type = "image/jpg">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>Hotel Chaudandi Darbar</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+                <p>Passionate purveyors of exceptional experiences. At Hotel Chaudandi Darbar, we redefine hospitality with our warm smiles, impeccable service, and attention to every detail. Nestled Chaudandigadhi municipality, our boutique haven offers a blend of elegance and comfort, making every guest feel like a cherished friend. Welcome to a world of relaxation and indulgence.</p>
+                <button type = "button" class = "head-btn">GET STARTED</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service</h2>
+                        <p>Culinary perfection curated for you. Indulge in a symphony of flavors at Darbars's food service. Our talented chefs craft exquisite dishes using locally sourced ingredients, creating a gastronomic journey that tantalizes the senses. Whether you're savoring a gourmet breakfast, a leisurely lunch, or a sumptuous dinner, each bite is a masterpiece. Elevate your dining experience with us and let your taste buds dance in delight.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>Revitalize and savor the moment at Darbar's refreshment oasis. Our thoughtfully curated selection of beverages offers a delightful escape from the ordinary. From artisanal coffees and teas to signature mocktails and handcrafted cocktails, each sip is a journey of rejuvenation. Unwind in our inviting ambiance, where conversations flow and spirits are lifted. Elevate your refreshment experience with us and let every sip be a celebration of life's pleasures.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>Elevating comfort, one immaculate space at a time. At Darbar, our housekeeping team takes pride in transforming your stay into a haven of cleanliness and serenity. With meticulous attention to detail, we ensure every corner of your space is flawlessly maintained, offering a sanctuary where you can truly unwind. We understand that a pristine environment is essential to your well-being, and our dedicated team is committed to exceeding your expectations. Experience the epitome of cleanliness and order, only at Hotel Chaudandi Darbar.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>Your safety, our priority. Welcome to Darbar, where tranquility meets cutting-edge security. We take guarding your peace of mind as seriously as we do your comfort. With state-of-the-art technology and a vigilant team, we've woven a cocoon of protection around every guest. Rest easy knowing that your personal space is fortified, allowing you to immerse yourself in relaxation without a worry. Experience a stay where security and serenity coexist seamlessly, only at Hotel Chaudandi Darbar.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "sldr-del01.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Double bed AC room</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Individual Temperature Control
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                24/7 Service.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Plush Bedding.
+                            </li>
+                        </ul>
+                        <p>Indulge in spacious comfort and optimal relaxation in our Double Bed AC Rooms at Darbar. Designed to offer the perfect blend of elegance and functionality, these rooms provide a haven of tranquility for couples, friends, or solo travelers. Immerse yourself in the luxury of a plush double bed, bask in the personalized climate control of the air conditioning, and relish in the modern amenities that enhance your stay. Experience serenity and sophistication, where every moment is tailored to your comfort, only at Hotel Chaudandi Darbar.</p>
+                        
+                        <p class = "rate">
+                            <span>NRS.2000 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "Hotel_Saint_Brieuc_Centre_Ker_Izel_40_1.webp" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Single bed AC room</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Individual Temperature Control.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                24/7 Service.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Plush Bedding.
+                            </li>
+                        </ul>
+                        <p>Discover your personal retreat in our Single Bed AC Rooms at Darbar. Thoughtfully designed for solo travelers seeking comfort and convenience, these rooms offer a cozy haven to unwind and recharge. Enjoy the luxury of a well-appointed single bed, complemented by the soothing ambiance of air conditioning that adapts to your preferences. Immerse yourself in a space that blends modern amenities with tranquility, ensuring your stay is both relaxing and rejuvenating. Experience comfort tailored just for you, only at Hotel Chaudandi Darbar.</p>
+                        
+                        <p class = "rate">
+                            <span>NRS.1700 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "d6c75b52.avif" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Non AC rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Natural Ventilation and Ceiling Fans.
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Comfortable Bedding.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                24/7 Service.
+                            </li>
+                        </ul>
+                        <p>Embrace the charm of simplicity at Darbar's Non-AC rooms. A cozy haven where comfort meets affordability, these rooms offer a tranquil retreat for budget-conscious travelers. Enjoy natural ventilation and ceiling fans that ensure a pleasant atmosphere, complemented by comfortable bedding for a restful sleep. With modern amenities and a focus on relaxation, our Non-AC rooms provide a unique experience that combines comfort, value, and a touch of nostalgia. Experience the warmth of genuine hospitality and a peaceful stay, only at Hotel Chaudandi Darbar.</p>
+                        
+                        <p class = "rate">
+                            <span>NRS.1300 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>I had an absolutely wonderful stay at Hotel Chaudandi Darbar! From the moment I walked in, I was greeted with genuine smiles and impeccable service. The staff went above and beyond to make me feel welcome and comfortable throughout my entire stay. The room was beautifully appointed, clean, and offered breathtaking views of the surrounding area.</p>
+                        <img src = "image4.jpg" alt = "customer image">
+                        <span> Prabhes Adhikari, Nepal</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>What truly sets [Hotel Name] apart is their commitment to creating memorable experiences. The concierge helped me plan my itinerary, ensuring I didn't miss out on any local attractions. The central location of the hotel made it easy to explore the city and return to a haven of relaxation.</p>
+                        <img src = "images.jpeg" alt = "customer image">
+                        <span>Klaus, Germany</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>The attention to detail in every aspect of the hotel was truly impressive. The on-site dining was a culinary delight, offering a diverse range of delicious dishes. Whether I was relaxing at the pool or enjoying a spa treatment, I felt like royalty.</p>
+                        <img src = "cus2.jpg" alt = "customer image">
+                        <span>Mercedes Watson, USA</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>The hotel's location is also worth mentioning. Situated in the heart of the city, it made exploring the area a breeze. After a day of sightseeing, returning to the comfort of Chaudandi Darbar felt like coming home.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Beltar, Chaudandigadhi municipality, Udayapur, Nepal
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +977 9852844016                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            hotelchaudandidarbar@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
